@@ -1,0 +1,16 @@
+#include <iostream>
+#include "pet.h"
+
+namespace pet_namespace{
+// Constructor implementation
+template <typename ThingHeight>
+Pet<ThingHeight>::Pet(ThingHeight petHeight) {
+    height = petHeight;
+}
+
+// displayInfo method implementation
+template <typename ThingHeight>
+void Pet<ThingHeight>::displayInfo() {
+    std::cout << "Height: " << height << std::endl;
+}
+}
